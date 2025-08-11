@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<a href="https://www.google.com/">Google  same tab dude </a>
+<br/><!-- this tag is used to go to next line-->
+<a href="https://www.youtube.com/watch?v=HcOc7P5BMi4">apnna college tutorial</a>
+<h1> Hello world! </h1><!-- 6 levels of heading exists -->
+<img src="https://www.worldsbestcatlitter.com/wp-content/uploads/2019/12/02_coughing-cat-meme.jpg" alt="puking cat" height="100"/>
+<br/>
+<a href="https://www.google.com/" target="_main">Google in another tab</a>
+<br/>
+
+<a href="https://www.google.com" target="_blank">
+  <img 
+    src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" 
+    alt="Google" 
+    width="200">
+</a>
+
+<!-- Creation of a table -->
+<table>
+  <tr>
+    <th>Student</th>
+    <th>Marks</th>
+  </tr>
+  <tr>
+    <td>neha</td>
+    <td>23</td>
+  </tr>
+   <tr>
+    <td>abhi</td>
+    <td>100</td>
+  </tr>
+</table>
+
+<!-- with thead and tfooter-->
+ <table>
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pen</td>
+      <td>$1</td>
+    </tr>
+    <tr>
+      <td>Notebook</td>
+      <td>$3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>$4</td>
+    </tr>
+  </tfoot>
+</table>
+
+<!--merging of rows and coloumns with border-->
+<table>
+  <tr>
+    <td colspan="2">Merge Column</td>
+  </tr>
+  <tr>
+    <td>cell 1</td>
+    <td>cell 2</td>
+  </tr>
+  <tr>
+    <td>cell 3</td>
+    <td>cell 4</td>
+  </tr>
+</table>
+
+<table border="2" cellpadding="10" cellspacing="0">
+  <tr>
+    <td colspan="2">Merged Column</td>
+  </tr>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+  </tr>
+</table>
+
+<br>
+
+<table border="2" cellpadding="10" cellspacing="0">
+  <tr>
+    <td rowspan="2">Merged Row</td>
+    <td>Row 1</td>
+  </tr>
+  <tr>
+    <td>Row 2</td>
+  </tr>
+</table>
+
+<form action="/submit-form" method="post">
+  <label for="name">Name :</label>
+  <input type="text" id="name" name="username" placeholder="your name" required>
+<br/>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+<br/>
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age">
+<br/>
+  <label for="file">upload File:</label>
+  <input type="file" id="file" name="upload">
+<br/>
+  <p>Gender:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+<br/>
+<p>Select Hobbies:</p>
+  <input type="checkbox" id="cricket" name="hobby" value="cricket">
+  <label for="cricket">Cricket</label>
+  <input type="checkbox" id="music" name="hobby" value="music">
+  <label for="music">Music</label>
+<br/>
+  <label for="country">Country :</label>
+  <select id="country" name="country">
+    <option value="india">India</option>
+    <option value="usa">USA</option>
+  </select>
+<br/>
+<label for="message">Your message :</label>
+<textarea id="message" name="message" rows="4" cols="30"></textarea>
+
+<button type="submit">Submit</button>
+<button type="Reset">Reset</button>
+</form>
+
+<hr/>
+
+<video width="320" height="240" controls>
+  <source src="C:\CDC_Training\JFS\HTML_tutorial\7565439-hd_1080_1920_25fps.mp4" type="video/mp4">
+</video>
+
+<iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/YLLkDOT8O8M" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen>
+</iframe>
+<div draggable="true">Drag me</div>
+<div id="drag" draggable="true">Drag Me</div>
+<div id="drop" style="width:200px; height:100px; border:1px solid black;">Drop Here</div>
+
+<script>
+  const drag = document.getElementById("drag");
+  const drop = document.getElementById("drop");
+
+  drag.addEventListener("dragstart", (e) => {
+    e.dataTransfer.setData("text", drag.id);
+  });
+
+  drop.addEventListener("dragover", (e) => {
+    e.preventDefault(); // Allow drop
+  });
+
+  drop.addEventListener("drop", (e) => {
+    e.preventDefault();
+    const data = e.dataTransfer.getData("text");
+    drop.appendChild(document.getElementById(data));
+  });
+</script>
+navigator.geolocation.getCurrentPosition((position) => {
+  console.log(position.coords.latitude, position.coords.longitude);
+});
+
+
+
+
+</body>
+</html>
+
+
+
+
+
