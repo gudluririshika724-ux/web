@@ -8,6 +8,8 @@ public class ncrSwingprac {
     JTextField t1, t2;
     JButton b1;
 
+    
+
     ncrSwingprac() {
         f = new JFrame("nCr Calculator");
         p = new JPanel();
