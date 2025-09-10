@@ -48,8 +48,10 @@ button1{
     text-align: center;
     
 }
-/* there exists something called font weight */
+/* there exists something called font-weight ranges from 100 -900 (greater than 400 is bolder */
 #chotu {
+    /* font family has fall back we can apply another font if the first one is not applied(comes into existence when one font does not exist */
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     text-decoration: overline;
     text-decoration: green dotted underline;
@@ -58,4 +60,17 @@ button1{
 /* removes underline in anchor tag */
 a{
     text-decoration: none;
+}
+
+/* line height is the distance btween different lines  */
+#p1 {
+    font-size: 25px;
+    line-height: 5px;
+
+}
+#p2 {
+  font-size: 30px;
+}
+#p3 {
+    font-size: 10px;
 }
