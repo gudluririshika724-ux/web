@@ -1,0 +1,61 @@
+/* mdn css tutorial its a website to learn about all the information */
+h1{
+    color: 
+    rgb(209, 141, 57);
+}
+button{
+    color:blue;
+    background-color: aquamarine;
+}
+body{
+    background-color: beige;
+
+}
+button1{
+    background-color: brown;
+    border-color: black;
+    
+}
+*{
+    color: black;
+
+   
+}
+#heading3{
+    color: blue;
+}
+
+.myclass{
+    color: crimson;
+}
+#box {
+    color: cornflowerblue;
+    background-color: rgb(233, 192, 27);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+.heading {
+    color: blue;
+    background-color: cadetblue;
+    
+}
+#headingclass {
+    background-color: rgb(76, 73, 73);
+}
+/* can use star=left,right=end in css3 because of exisiting languages such as urdu */
+#ohno {
+    text-align: center;
+    
+}
+/* there exists something called font weight */
+#chotu {
+    text-align: center;
+    text-decoration: overline;
+    text-decoration: green dotted underline;
+}
+
+/* removes underline in anchor tag */
+a{
+    text-decoration: none;
+}
